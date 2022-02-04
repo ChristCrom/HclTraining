@@ -1,3 +1,4 @@
+package com.hcl.datastructurespractice;
 import java.util.LinkedList;
 
 public class LinkedListPractice {
