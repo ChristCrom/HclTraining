@@ -6,6 +6,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="StringManipulation"/>
-	<classpathentry kind="src" path="LinkedList"/>
+	<classpathentry kind="src" path="LinkedListPractice"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
