@@ -1,4 +1,5 @@
-package com.hcl.exceptionpractice;
+package com.hcl.customexceptionpractice;
+
 import java.util.Scanner;
 
 public class StudentExcep {

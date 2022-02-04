@@ -1,10 +1,10 @@
-package com.hcl.datastructurespractice;
-import java.util.LinkedList;
+package com.hcl.commondatastructure;
+
+import java.util.*;
 
 public class LinkedListPractice {
-
 	public static void main(String[] args) {
-		LinkedList<Integer> list1 = new LinkedList<>();
+		LinkedList<Integer> list1 = new LinkedList<Integer>();
 
 		list1.add(1);
 		list1.add(2);

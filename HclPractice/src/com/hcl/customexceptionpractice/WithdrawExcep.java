@@ -1,4 +1,4 @@
-package com.hcl.exceptionpractice;
+package com.hcl.customexceptionpractice;
 
 public class WithdrawExcep extends Exception {
 	public WithdrawExcep() {

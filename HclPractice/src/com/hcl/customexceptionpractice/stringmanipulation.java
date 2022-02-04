@@ -1,5 +1,4 @@
-package com.hcl.exceptionpractice;
-
+package com.hcl.customexceptionpractice;
 
 import java.util.StringTokenizer;
 
@@ -10,8 +9,6 @@ public class stringmanipulation {
 		String date = "11/24/1997";
 		StringTokenizer st = new StringTokenizer(origStr, "_");
 		String newStr = st.nextToken("_") + " ";
-		
-		
 
 		while (st.hasMoreTokens()) {
 			newStr += (st.nextToken("_") + " ");
@@ -35,4 +32,3 @@ public class stringmanipulation {
 
 	}
 }
-

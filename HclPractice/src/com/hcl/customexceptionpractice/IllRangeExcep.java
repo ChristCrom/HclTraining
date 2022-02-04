@@ -1,4 +1,5 @@
-package com.hcl.exceptionpractice;
+package com.hcl.customexceptionpractice;
+
 class IllRangeExcep extends Exception {
 	public IllRangeExcep() {
 		System.out.println("Student's score must be in between 0 and 100");

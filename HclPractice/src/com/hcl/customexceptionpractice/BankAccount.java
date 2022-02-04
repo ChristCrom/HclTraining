@@ -1,5 +1,4 @@
-package com.hcl.exceptionpractice;
-
+package com.hcl.customexceptionpractice;
 
 public class BankAccount {
 	int id;
