@@ -17,14 +17,6 @@ class Employee {
 	}
 }
 
-class MyDog implements Dog, Beagle {
-	public void speakName() {
-		Dog.super.speakName();
-		Beagle.super.speakName();
-		Dog.bark();
-		System.out.println("Look at me go!");
-	}
-}
 
 public class LambdaMain {
 	private int operate(int a, int b, MyMathOp myMathOp) {
@@ -54,18 +46,18 @@ public class LambdaMain {
 		AppendString message1 = message -> System.out.println("Whats bracken " + message + " `Edited");
 		System.out.println("\nThis is my appeneded string message using lambda\n");
 		message1.append("brand new whip new mansion");
-//--------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------FOREACH------------------------------------------------------------
 		List<Integer> aList = new ArrayList<>();
 		for (int j = 0; j < 5; j++) {
 			aList.add(j);
 		}
 		System.out.println("\nThis is my arraylist iterated and printed through lambda\n");
 		aList.forEach(p -> System.out.println(p));
-//-----------------------------------------------------------------------------------------------------------------
+//-------------------------------------------------DEFAULT METHOD----------------------------------------------------------------
 		System.out.println("\nThis is my use of default methods creating a dog interface and class\n");
 		Dog dog = new MyDog();
 		dog.speakName();
-//--------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------WITHOUTSTREAMAPIandWITHSTREAMAPI------------------------------------------------------------------
 		System.out.println(
 				"\nThis is the list printed with only with employees that have given conditions with out Streams\n");
 		List<Employee> emps = new ArrayList<>();
@@ -102,7 +94,7 @@ public class LambdaMain {
 				.map(sal -> sal.salary).collect(Collectors.toSet());
 
 		System.out.println(streamEmpSal1);
-//----------------------------------------------------------------------------------------------------------------------------------
+//------------------------------------------------OPTIONAL----------------------------------------------------------------------------------
 		System.out.println("\nThis is my use of an optional class with a string passing it a null value\n");
 		String name = null;
 		String name2 = "CHRIS";
@@ -121,12 +113,12 @@ public class LambdaMain {
 			System.out.println(lowercaseString);
 		} else
 			System.out.println("String Value is Null or not present");
-//----------------------------------------------------------------------------------------------------------------------------------------
+//------------------------------------------------PREDICATE----------------------------------------------------------------------------------------
 		System.out.println("\nThis is an example of predicate testing integers\n");
 		Predicate<Integer> lesserthan = q -> (q > 4);
 		System.out.println(lesserthan.test(21));
 		System.out.println(lesserthan.test(3));
-//----------------------------------------------------------------------------------------------------------------------------------------
+//------------------------------------------------BIFUNCTION----------------------------------------------------------------------------------------
 		System.out.println("\nThis is using BiFunction to do simple arthmetic\n");
 		BiFunction<Integer, Integer, Integer> additions = (a, b) -> a + b;
 		System.out.println("Answer for addition = " + additions.apply(2, 3));
