@@ -18,7 +18,7 @@ public class Operations {
 		String b = scanner.nextLine();
 		System.out.println("Please enter email of the student  you want to insert:");
 		String c = scanner.nextLine();
-		scanner.close();
+		
 
 		EntityManager entityManager = JPAUtil.getEntityManagerFactory().createEntityManager();
 		EntityTransaction entityTransaction = entityManager.getTransaction();
@@ -40,7 +40,7 @@ public class Operations {
 		System.out.println("student firstname :: " + student.getFirstName());
 		System.out.println("student lastname :: " + student.getLastName());
 		System.out.println("student email :: " + student.getEmail());
-		scanner.close();
+		
 		entityManager.getTransaction().commit();
 		entityManager.close();
 	}
@@ -78,7 +78,7 @@ public class Operations {
 		System.out.println("student lastname :: " + student.getLastName());
 		System.out.println("student email :: " + student.getEmail());
 		student.setEmail("christcrom988@gmail.com");
-		scanner.close();
+		
 		entityManager.getTransaction().commit();
 		entityManager.close();
 	}
@@ -97,7 +97,6 @@ public class Operations {
 		System.out.println("student lastname :: " + student.getLastName());
 		System.out.println("student email :: " + student.getEmail());
 		entityManager.remove(student);
-		
 		entityManager.getTransaction().commit();
 		entityManager.close();
 	}
@@ -111,7 +110,5 @@ public class Operations {
 
 		student student = entityManager.find(student.class, a);
 		System.out.println("Email of Student with Id " + a + ": " + student.getEmail());
-		scanner.close();
-
 	}
 }
