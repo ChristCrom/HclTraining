@@ -1,7 +1,7 @@
-package com.hcl.myservlet;
+package com.hcl.webapp;
 
 
-public class MyServlet  {
+public class UserData  {
 	public String name, password, email;
 
 	public String getName() {

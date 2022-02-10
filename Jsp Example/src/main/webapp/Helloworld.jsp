@@ -1,4 +1,4 @@
-<jsp:useBean id = "a" class="com.hcl.myservlet.MyServlet"></jsp:useBean>
+<jsp:useBean id = "a" class="com.hcl.webapp.UserData"></jsp:useBean>
 <jsp:setProperty property="*" name = "a"/>
 
 Record:<br>
