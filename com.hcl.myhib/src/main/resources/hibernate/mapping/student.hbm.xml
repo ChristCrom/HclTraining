@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ <class table = "student" lazy="false" name="com.hcl.myhib.cruds.student">
+ <id column="id" type="int" name="id">
+ <generator class="increment"/>
+ </id>
+ <property name = "first_name" type = "string" column = "first_name"/>
+ <property name = "last_name" type = "string" column = "last_name"/>
+ <property name = "email" type = "string" column = "email"/>
+ </class>
+</hibernate-mapping>
