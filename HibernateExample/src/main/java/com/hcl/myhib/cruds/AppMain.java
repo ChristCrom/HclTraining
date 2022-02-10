@@ -52,7 +52,7 @@ public class AppMain {
 
 	}
 	 sc.close();
-	 if(c == 2) {
+	 if(c !=1) {
 		 System.exit(0);
 	 }
 	 

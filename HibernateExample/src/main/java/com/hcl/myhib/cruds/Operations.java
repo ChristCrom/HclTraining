@@ -59,7 +59,7 @@ public class Operations {
 			allStudent.forEach(p -> System.out.println(p));
 			}
 		catch (Exception e) {
-			System.out.println("\nDone displaying list or it is empty or it is missing index 1\n");
+			System.out.println("\nDone displaying list \n");
 		}
 		entityManager.close();
 
