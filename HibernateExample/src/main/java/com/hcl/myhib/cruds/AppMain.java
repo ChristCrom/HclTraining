@@ -2,10 +2,10 @@ package com.hcl.myhib.cruds;
 
 import java.util.Scanner;
 
-public class Operations {
+public class AppMain {
 
 	public static void main(String[] args) {
-		CrudMethods op = new CrudMethods();
+		Operations op = new Operations();
 	 int c = 1;
 	 Scanner sc = new Scanner(System.in);
 	 while(c == 1) {
@@ -46,13 +46,17 @@ public class Operations {
 		}
 	   
 	  System.out.println("Do you want to do another query? 1 for yes or 2 for no");
+	  sc = new Scanner(System.in);
 	  c = sc.nextInt();
 	 
 
 	}
 	 sc.close();
+	 if(c == 2) {
+		 System.exit(0);
+	 }
+	 
+	 
 	 
 	}
 }
-
-
