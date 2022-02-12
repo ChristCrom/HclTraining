@@ -3,14 +3,21 @@
   <groupId>JdbcPractice</groupId>
   <artifactId>jdbc</artifactId>
   <version>0.0.1-SNAPSHOT</version>
- <dependencies>
+ 
+ <dependencies> 
 		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>8.0.11</version>
 		</dependency>
+		<dependency>
+		<groupId>log4j</groupId>
+		<artifactId>log4j</artifactId>
+		<version>1.2.12</version>
+		</dependency>
  </dependencies>
+
 </project>
 
 
