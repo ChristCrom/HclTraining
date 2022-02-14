@@ -36,8 +36,11 @@ public class Verify extends HttpServlet {
 		PrintWriter writer = response.getWriter();
 		if (name != null) {
 			writer.println("Hello " + name + "! You have succefully logged in!");
-		} else
+			writer.print("<br><a href=\"http://localhost:11742/WebAppProject/\"><button type=\"button\">Home</button></a>");
+		} else {
 			writer.println("Email or password incorrect please try again");
+			writer.print("<br><a href=\"http://localhost:11742/WebAppProject/login.html\"><button type=\"button\">Login</button></a>");
+		}
 	}
 
 	public String VerifyInfo(String password, String email) {
