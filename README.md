@@ -1,2 +1,1 @@
-# HclTraining
-To store Hcl Exercises etc...
+Eclipse Projects
